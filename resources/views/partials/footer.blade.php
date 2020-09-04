@@ -7,7 +7,6 @@
             <div class="col-sm-4">
                 @if($showSupport)
                 <p>
-                    {!! trans('cachet.powered_by') !!}
                     @if($showTimezone)
                     {{ trans('cachet.timezone', ['timezone' => $timezone]) }}
                     @endif

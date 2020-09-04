@@ -324,7 +324,7 @@ class InstallCommand extends Command
     {
         $config = [];
         if ($this->confirm('Do you wish to use Cachet Beacon?')) {
-            $config['CACHET_BEACON'] = 'true';
+            $config['CACHET_BEACON'] = 'false';
         }
 
         if ($this->confirm('Do you wish to use Emoji? This requires a GitHub oAuth Token!')) {

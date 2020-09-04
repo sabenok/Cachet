@@ -16,26 +16,26 @@ return [
 
     // Incidents
     'incidents' => [
-        'title'                    => 'Incidents & Maintenance',
+        'title'                    => 'Инциденты & Техработы',
         'incidents'                => 'Инциденты',
-        'logged'                   => '{0}There are no incidents, good work.|[1]You have logged one incident.|[2,*]You have reported <strong>:count</strong> incidents.',
+        'logged'                   => '{0}Инцидентов нет, всё заебок.|[1]Есть один инцидент.|[2,*]В системе <strong>:count</strong> инцидентов. Го чинить!.',
         'incident-create-template' => 'Создать шаблон',
         'incident-templates'       => 'Шаблоны инцидентов',
         'updates'                  => [
-            'title'   => 'Incident updates for :incident',
-            'count'   => '{0}Zero Updates|[1]One Update|[2]Two Updates|[3,*]Several Updates',
+            'title'   => 'Количество обновлений :incident',
+            'count'   => '{0}Ноль|[1]одно|[2]Два|[3,*]Несколько',
             'add'     => [
-                'title'   => 'Create new incident update',
-                'success' => 'Your new incident update has been created.',
-                'failure' => 'Something went wrong with the incident update.',
+                'title'   => 'Создать резолюцию инцидента',
+                'success' => 'Создана ваша новая резолюция об инциденте.',
+                'failure' => 'Что-то пошло не так с резолюцией инцидента',
             ],
             'edit' => [
-                'title'   => 'Edit incident update',
-                'success' => 'The incident update has been updated.',
-                'failure' => 'Something went wrong updating the incident update',
+                'title'   => 'Редактировать резолюцию инцидента',
+                'success' => 'Резолюция инцидента была обновлена.',
+                'failure' => 'Что-то пошло не так при обновлении резолюции инцидента',
             ],
         ],
-        'reported_by'              => 'Reported :timestamp by :user',
+        'reported_by'              => 'Сообщено :timestamp пользователем :user',
         'add'                      => [
             'title'   => 'Добавить инцидент',
             'success' => 'Инцидент добавлен.',
@@ -74,22 +74,22 @@ return [
 
     // Incident Maintenance
     'schedule' => [
-        'schedule'     => 'Maintenance',
-        'logged'       => '{0}There has been no Maintenance, good work.|[1]You have logged one schedule.|[2,*]You have reported <strong>:count</strong> schedules.',
+        'schedule'     => 'Техработы',
+        'logged'       => '{0}Техработы не ведутся, все заебок.|[1]Запланированы одни техработы|[2,*]Запланировано <strong>:count</strong> техработ.',
         'scheduled_at' => 'Запланировано на :timestamp',
         'add'          => [
-            'title'   => 'Add Maintenance',
-            'success' => 'Maintenance added.',
-            'failure' => 'Something went wrong adding the Maintenance, please try again.',
+            'title'   => 'Добавить техработы',
+            'success' => 'Техработы добавлены.',
+            'failure' => 'Что-то пошло не так при добавлении техработ, попробуйте еще раз.',
         ],
         'edit' => [
-            'title'   => 'Edit Maintenance',
-            'success' => 'Maintenance has been updated!',
-            'failure' => 'Something went wrong editing the Maintenance, please try again.',
+            'title'   => 'Редактировать техработы',
+            'success' => 'Техработы были изменены!',
+            'failure' => 'Что-то пошло не так при редактировании техработ, попробуйте еще раз.',
         ],
         'delete' => [
-            'success' => 'The Maintenance has been deleted and will not show on your status page.',
-            'failure' => 'The Maintenance could not be deleted, please try again.',
+            'success' => 'Техработы былы удалены и не будут отображаться на странице статуса.',
+            'failure' => 'Не удалось удалить техработы, попробуйте еще раз.',
         ],
     ],
 
@@ -158,12 +158,12 @@ return [
     'subscribers' => [
         'subscribers'          => 'Подписчики',
         'description'          => 'Подписчики будут получать уведомления по электронной почте при добавлении инцидентов или изменении статусов компонентов.',
-        'description_disabled' => 'To use this feature, you need allow people to signup for notifications.',
+        'description_disabled' => 'Чтобы использовать эту функцию, вам нужно разрешить людям подписываться на уведомления.',
         'verified'             => 'Подтверждён',
         'not_verified'         => 'Не подтверждён',
         'subscriber'           => ':email, подписан :date',
         'no_subscriptions'     => 'Подписан на все обновления',
-        'global'               => 'Globally subscribed',
+        'global'               => 'Глобальная подписка',
         'add'                  => [
             'title'   => 'Добавить нового подписчика',
             'success' => 'Подписчик добавлен!',
@@ -230,8 +230,8 @@ return [
             'mail'  => 'Mail',
             'test'  => 'Test',
             'email' => [
-                'subject' => 'Test notification from Cachet',
-                'body'    => 'This is a test notification from Cachet.',
+                'subject' => 'Test notification from Status Page',
+                'body'    => 'This is a test notification from Status Page.',
             ],
         ],
         'security' => [
@@ -251,9 +251,9 @@ return [
         'credits' => [
             'credits'       => 'Разработчики',
             'contributors'  => 'Контрибьюторы',
-            'license'       => 'Cachet - это проект с открытым исходным кодом по лицензии BSD-3, разрабатываемый компанией <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
-            'backers-title' => 'Партнеры и спонсоры',
-            'backers'       => 'Если вы хотите поддержать будущую разработку, присоединяйтесь к сбору средств в <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet Patreon</a>.',
+            'license'       => '',
+            'backers-title' => '',
+            'backers'       => '',
             'thank-you'     => 'Спасибо всем нашим :count контрибьюторам.',
         ],
     ],
@@ -280,8 +280,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => 'Поддержать Cachet',
-        'support_subtitle' => 'Посетите нашу страницу на <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong>!',
+        'support'          => '',
+        'support_subtitle' => '',
         'news'             => 'Последние новости',
         'news_subtitle'    => 'Проверить обновления',
     ],

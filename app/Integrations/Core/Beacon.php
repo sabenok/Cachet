@@ -77,6 +77,7 @@ class Beacon implements BeaconContract
      */
     public function send()
     {
+        return;
         // We don't want any accidental sending of beacons if the installation has explicitly said no.
         if (!$this->enabled()) {
             return;
