@@ -69,7 +69,7 @@ if (!function_exists('formatted_date')) {
     function formatted_date($date)
     {
         Date::setLocale('ru');
-        $dateFormat = Config::get('setting.date_format', 'jS F Y');
+        $dateFormat = Config::get('setting.date_format', 'j F Y');
 
         return (new Date($date))->format($dateFormat);
     }
